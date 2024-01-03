@@ -1,0 +1,24 @@
+CREATE DATABASE Exercicio_avalia;
+CREATE TABLE tb_usuario(
+id_user int primary key auto_increment,
+	nome_user varchar(100),
+	login_user varchar (100),
+    	senha_user int not null
+);
+
+CREATE table produto(
+	id_prod INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nome_prod varchar (100),
+    data_prod date
+);
+
+INSERT INTO produto(nome_prod,data_prod)VALUES
+('CAMISA ROSA FEM','2007-03-24'),
+('CAMISA PRETA MASC','2007-05-03'),	
+('CAMISA VERDE FEM','2007-02-16'),	
+('CAMISA LARANJA MASC','2007-09-01'),	
+('TENIS VANS FEM','2007-08-07'),
+('TENIS NIKE MASC','2008-02-04'),	
+('TENIS ALL STAR FEM','2007-08-14'),
+('MOLETOM BRANCO FEM','2009-06-08'),
+('MOLETOM PRETO MASC','2007-05-04');	
